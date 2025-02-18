@@ -1,8 +1,7 @@
 
-
 ---
 
-
+```markdown
 # AmplifierSim
 
 **AmplifierSim** is a simulation repository that demonstrates how to simulate analog amplifier circuits using [PySpice](https://pyspice.fabrice-salvaire.fr/) with Ngspice as a shared library. This repository includes two example circuits:
@@ -95,7 +94,7 @@ If a newer stable branch (e.g., `NGSPICE_REWORK_15`) becomes available, you can 
 
 Since PySpice may raise an error for version 44.x, the `patch_and_run.sh` script locates the PySpice file `PySpice/Spice/NgSpice/Shared.py` in your site-packages, creates a backup, and comments out the version-check lines.
 
-To manually patch, open the file (for example, `/home/abheekp/spice/lib/python3.10/site-packages/PySpice/Spice/NgSpice/Shared.py`), find the code that looks like:
+To manually patch, open the file (for example, `/home/username/.local/lib/python3.10/site-packages/PySpice/Spice/NgSpice/Shared.py`), find the code that looks like:
 
 ```python
 if self.version.startswith('44'):
@@ -135,9 +134,9 @@ The **common-emitter amplifier** is one of the most widely used configurations i
 
 - **Voltage Gain (Approximate):**
 
-  \[
+  $$
   A_v \approx -\frac{R_C}{R_E}
-  \]
+  $$
 
   where:
   - \( R_C \) is the collector resistor.
@@ -155,9 +154,9 @@ The **differential amplifier** uses a pair of matched transistors to amplify the
 
 - **Differential Gain:**
 
-  \[
+  $$
   A_d \approx \frac{R_C}{2R_E}
-  \]
+  $$
 
   where:
   - \( R_C \) is the collector resistor (assumed equal for both transistors).
@@ -181,13 +180,16 @@ While the current repository does not simulate op amp circuits, here are key con
 
 - **Common Configurations:**
   - **Inverting Amplifier:**
-    \[
+
+    $$
     A_v = -\frac{R_f}{R_{in}}
-    \]
+    $$
+
   - **Non-Inverting Amplifier:**
-    \[
+
+    $$
     A_v = 1 + \frac{R_f}{R_{in}}
-    \]
+    $$
 
 - **Practical Considerations:**  
   Real op amps have finite gain, bandwidth, and slew rate. Future versions of this project may simulate these non-ideal behaviors.
@@ -278,4 +280,6 @@ Contributions are welcome! If you have suggestions, find bugs, or wish to add ne
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 ```
+
+---
 
