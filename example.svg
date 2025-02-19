@@ -1,0 +1,45 @@
+<svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <!-- VCC Supply -->
+    <text x="280" y="30" font-size="14">VCC</text>
+    <line x1="280" y1="40" x2="280" y2="80" stroke="black" stroke-width="1.5"/>
+    
+    <!-- Collector Resistors -->
+    <line x1="180" y1="80" x2="180" y2="130" stroke="black" stroke-width="1.5"/>
+    <line x1="380" y1="80" x2="380" y2="130" stroke="black" stroke-width="1.5"/>
+    <text x="150" y="110" font-size="12">RC</text>
+    <text x="400" y="110" font-size="12">RC</text>
+    
+    <!-- BJTs -->
+    <!-- Q1 -->
+    <line x1="180" y1="130" x2="180" y2="230" stroke="black" stroke-width="1.5"/>
+    <line x1="160" y1="160" x2="200" y2="160" stroke="black" stroke-width="1.5"/>
+    <line x1="160" y1="200" x2="200" y2="200" stroke="black" stroke-width="1.5"/>
+    <path d="M180,200 L220,230" stroke="black" stroke-width="1.5" fill="none"/>
+    <path d="M180,160 L220,130" stroke="black" stroke-width="1.5" fill="none"/>
+    
+    <!-- Q2 -->
+    <line x1="380" y1="130" x2="380" y2="230" stroke="black" stroke-width="1.5"/>
+    <line x1="360" y1="160" x2="400" y2="160" stroke="black" stroke-width="1.5"/>
+    <line x1="360" y1="200" x2="400" y2="200" stroke="black" stroke-width="1.5"/>
+    <path d="M380,200 L420,230" stroke="black" stroke-width="1.5" fill="none"/>
+    <path d="M380,160 L420,130" stroke="black" stroke-width="1.5" fill="none"/>
+    
+    <!-- Current Source -->
+    <circle cx="280" cy="280" r="20" stroke="black" fill="none" stroke-width="1.5"/>
+    <line x1="280" y1="260" x2="280" y2="230" stroke="black" stroke-width="1.5"/>
+    <text x="265" y="285" font-size="12">IEE</text>
+    
+    <!-- Ground Symbol -->
+    <line x1="275" y1="320" x2="285" y2="320" stroke="black" stroke-width="1.5"/>
+    <line x1="277" y1="325" x2="283" y2="325" stroke="black" stroke-width="1.5"/>
+    <line x1="279" y1="330" x2="281" y2="330" stroke="black" stroke-width="1.5"/>
+    
+    <!-- Input Labels -->
+    <text x="140" y="160" font-size="12">Vin+</text>
+    <text x="410" y="160" font-size="12">Vin-</text>
+    
+    <!-- Parameters -->
+    <text x="50" y="350" font-size="12">CMRR = 75dB</text>
+    <text x="50" y="370" font-size="12">Ad = 50</text>
+    <text x="200" y="350" font-size="12">Vin(cm) = 100mV pp</text>
+</svg>
